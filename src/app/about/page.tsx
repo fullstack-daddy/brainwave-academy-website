@@ -59,7 +59,6 @@ const values = [
   },
 ];
 
-// Milestones data
 const milestones = [
   {
     year: "2023",
@@ -82,9 +81,7 @@ const milestones = [
 export default function About() {
   return (
     <>
-      {/* <Navbar /> */}
       <div className="min-h-screen bg-gradient-to-b from-white to-blue-50/30">
-        {/* Hero Section */}
         <section className="relative py-20 overflow-hidden bg-gradient-to-br from-indigo-900 to-purple-800 text-white">
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="absolute top-0 right-0 w-1/3 h-full">

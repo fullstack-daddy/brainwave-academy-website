@@ -10,7 +10,6 @@ import Footer from "@/components/Layout/Footer";
 
 export default function Home() {
   useEffect(() => {
-    // Add scroll animation effect
     const handleScroll = () => {
       const elements = document.querySelectorAll(".fade-in");
       elements.forEach((element) => {
@@ -26,7 +25,7 @@ export default function Home() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check on initial load
+    handleScroll(); 
 
     return () => {
       window.removeEventListener("scroll", handleScroll);

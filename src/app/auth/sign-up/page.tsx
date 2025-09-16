@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-// Type definitions
 interface FormData {
   firstName: string;
   lastName: string;
@@ -60,7 +59,6 @@ export default function SignUp() {
       [name]: type === "checkbox" ? checked : value,
     });
 
-    // Clear error when user starts typing
     if (errors[name as keyof FormErrors]) {
       setErrors({
         ...errors,
@@ -124,13 +122,10 @@ export default function SignUp() {
     setIsLoading(true);
 
     try {
-      // Simulate API call
       await new Promise<void>((resolve) => setTimeout(resolve, 1500));
 
-      // Handle successful signup
       console.log("Signup successful", formData);
 
-      // Redirect to login or dashboard
       router.push("/dashboard?newUser=true");
     } catch (error) {
       console.error("Signup failed", error);

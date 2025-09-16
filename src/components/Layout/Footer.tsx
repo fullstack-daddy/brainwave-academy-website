@@ -1,4 +1,3 @@
-// components/Layout/Footer.jsx
 "use client";
 
 import { motion } from "framer-motion";

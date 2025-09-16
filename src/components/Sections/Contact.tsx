@@ -1,4 +1,3 @@
-// components/Sections/Contact.jsx
 "use client";
 
 import { motion } from "framer-motion";
@@ -20,9 +19,7 @@ export default function Contact() {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    // Handle form submission here
     console.log("Form submitted:", formData);
-    // Reset form
     setFormData({ name: "", email: "", message: "" });
     alert("Thank you for your message! We'll get back to you soon.");
   };
