@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Button from "../UI/Button";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -112,10 +113,19 @@ export default function Navbar() {
               Contact
             </a>
             <div className="mt-4 pt-4 border-t border-gray-200 px-4 space-y-2">
-              <Button variant="outline" className="w-full rounded-full">
+              <Link
+                href="/auth/sign-in"
+                className="w-full rounded-full bg-white text-black border border-gray-300 px-4 py-2 text-center hover:bg-gray-100 transition"
+              >
                 Login
-              </Button>
-              <Button className="w-full rounded-full">Sign Up</Button>
+              </Link>
+
+              <Link
+                href="/auth/sign-up"
+                className="w-full rounded-full bg-black text-white px-4 py-2 text-center hover:bg-gray-800 transition"
+              >
+                Sign Up
+              </Link>
             </div>
           </div>
         </div>
