@@ -76,7 +76,7 @@ export default function AITutorPage() {
     ];
 
     return (
-      responses[Math.floor(Math.random() * responses)] +
+      responses[Math.floor(Math.random())] +
       " " +
       "The key thing to remember here is that practice makes perfect. Would you like me to provide some examples or exercises to reinforce this concept?"
     );
